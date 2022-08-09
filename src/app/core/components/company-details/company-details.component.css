@@ -1,0 +1,117 @@
+.block-title {
+  font-family: "Syne-Bold";
+  font-size: 20px;
+  margin-top: 7%;
+  
+}
+
+.row-margin-05 {
+  margin-top: 50%;
+}
+
+.submit-button {
+  margin-left: 5%;
+  margin-top: 3%;
+  color: white;
+  font-size: 20px;
+  font-family: "Syne-Bold";
+  background: #000000;
+  border-radius: 9px;
+  border: none;
+  width: 482px;
+  height: 72px;
+  text-align: center;
+}
+
+.review-button {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Poppins-Light";
+  font-weight: 100;
+  font-size: 16px;
+  height: 45px;
+  border-radius: 2rem;
+  padding: 8px 32px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  border-color: #000000;
+  border-style: solid;
+ float: right;
+}
+
+.secondPageimg {
+  margin-top: 5%;
+  margin-left: 5%;
+  width: 50%;
+}
+
+
+/* 
+.panelGradient {
+  width: 80%;
+  height: 100%;
+  float: right;
+  margin-top: -5%;} */
+
+
+  /* increase height of input box angular material */
+  input.mat-input-element {height:45px}
+
+  .searchIcon {
+    width: 3.5%;
+    float: left;
+    margin-top: 5px;
+    margin-left: 0%;
+  }
+
+
+
+  .panelGradient {
+    width: auto;    
+     /* float: right;  */
+    margin-left: auto;
+     /* margin-left: 0px; */
+     /* margin-right: 0px; */
+  }
+
+
+  .body-copy-lg {
+    /* padding-bottom: 30px; */
+    padding-top: 30px;
+    font-size: 18px;
+    font-family: Poppins-Medium;
+  }
+  
+  matInput{
+    width: 100%;
+    float: right;
+  }
+  
+
+  i.material-icons {
+    font-size: 25px;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+    width: auto;
+  }
+
+
+  
+  .search-box {
+    font-size: 16px;
+    vertical-align: middle;
+    position: relative;
+     color: purple;      
+     width: 330px;
+     float:auto;
+     height: 30px;
+   }
+
+   
+.review-card {
+width: auto;
+  height: 80px;
+  margin: auto;
+  /* margin: 10px; */
+}

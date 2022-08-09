@@ -1,0 +1,49 @@
+<section class="container-fluid grey-bg" >    
+    <form [formGroup] ="creatorLoginForm" autocomplete="off" novalidate (ngSubmit)="loginSubmit(creatorLoginForm.value)" >
+    <div class="d-flex align-content-start flex-wrap mt-4"></div>
+    <div class="d-flex align-content-start flex-wrap mt-4"></div>
+    <div class="d-flex align-content-start flex-wrap mt-4">
+        <div class="mr-auto p-2 left">
+            <div class="panel-title">Creators<br /> sign up for a<br /><b>free</b><br />account today</div>
+        </div>
+        <div class="ml-auto p-2 ">
+            <div class=" navbar">
+                <ul >
+                    <li class="navbar-item">
+                        <a [routerLink]="['/signup']" routerLinkActive="" class="sign-up">Sign Up</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a [routerLink]="['/login']" class="sign-up" >Login</a>
+                    </li>
+                </ul>
+            </div>
+            <div row-margin-05><br /></div>
+            <!-- <div class="w-1200"></div> -->
+            <div row-margin-05>
+                <mat-form-field class="form-inputs" appearance="outline">
+                    <mat-label>Email Address</mat-label>
+                    <input  type=text matInput formControlName="email"/>
+                    <mat-error *ngIf="hasError('email','required')"> Email Address is required</mat-error>
+                </mat-form-field>
+            </div>
+            <div row-margin-05>
+                <mat-form-field class="form-inputs" appearance="outline">
+                    <mat-label>Password</mat-label>
+                    <input type=text matInput  formControlName="password"  />
+                    <mat-error *ngIf="hasError('password','required')"> Password is required</mat-error>
+                </mat-form-field>
+            </div>
+            <div class="row-margin-05 error_text" *ngIf="loginError">
+                {{loginError}}
+              </div>
+
+            <div>
+                <button class="primary-button" >login</button>&nbsp;&nbsp;&nbsp;
+                <mat-label>or login with image</mat-label>
+            </div>
+            <div>
+            </div>
+        </div>
+    </div>
+</form>
+</section>

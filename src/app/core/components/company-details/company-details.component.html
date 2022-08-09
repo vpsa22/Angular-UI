@@ -1,0 +1,74 @@
+<section class="container-fluid  grey-bg">
+    <!-- <form [formGroup]="comanyDetailsForm" (ngSubmit)="onSubmit()"> -->
+<form>
+    <div class="d-flex flex-row  flex-wrap mt-4 ">
+
+        <div class=" mr-auto d-flex flex-column  flex-wrap ">
+            <div>
+                <mat-form-field appearance="outline">
+                <button type="submit" class="primary-button">reviews</button>
+                <button type="submit" class="disabled-button">meet the team</button>
+            </mat-form-field>
+            </div>
+            <div class="block-title">what other creators are saying</div>
+            <div>
+                <mat-form-field appearance="outline">
+                    <!-- <mat-card *ngFor="let section1 of sections" fxFlex="33" style="margin: 15px;"> -->
+                    <mat-card  class="review-card">
+                        <mat-card-header>
+                            <mat-card-title>Review 1</mat-card-title>
+                        </mat-card-header>
+                        <mat-card-content>
+                            <form>
+                                <!-----form data goes here ---->
+                            </form>
+                        </mat-card-content>
+                    </mat-card>
+                </mat-form-field>
+            </div>
+
+            <div>
+                <mat-form-field appearance="outline">
+                    <!-- <mat-card *ngFor="let section1 of sections" fxFlex="33" style="margin: 15px;"> -->
+                    <mat-card  class="review-card">
+                        <mat-card-header>
+                            <mat-card-title>Review 2</mat-card-title>
+                        </mat-card-header>
+                        <mat-card-content>
+                            <form>
+                                <!-----form data goes here ---->
+                            </form>
+                        </mat-card-content>
+                    </mat-card>
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field appearance="outline">
+                    <!-- <mat-card *ngFor="let section1 of sections" fxFlex="33" style="margin: 15px;"> -->
+                    <mat-card  class="review-card">
+                        <mat-card-header>
+                            <mat-card-title>Review 3</mat-card-title>
+                        </mat-card-header>
+                        <mat-card-content>
+                            <form>
+                                <!-----form data goes here ---->
+                            </form>
+                        </mat-card-content>
+                    </mat-card>
+                </mat-form-field>
+            </div>
+            <div>
+                <button type="submit" class="primary-button" (click)="routeToReview()">leave a review</button>
+            </div>
+        </div>
+
+        <div class=" p-2 panelGradient">
+            <mat-form-field appearance="outline">                              
+                <i class="material-icons">search</i>
+              <input type="text" class="search-box"  placeholder="Company name or keyword" />                              
+            </mat-form-field>
+        </div>
+    </div>
+    </form>
+
+</section>

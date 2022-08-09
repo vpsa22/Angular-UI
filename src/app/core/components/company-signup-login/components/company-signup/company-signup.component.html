@@ -1,0 +1,43 @@
+<div class="d-flex flex-row  flex-wrap mt-4 ">
+
+    <!-- <div class=" p-2 mr-auto" > -->
+    <div class=" p-2 mr-auto d-flex flex-column  flex-wrap ">
+        <mat-form-field class="form-inputs" appearance="outline">
+            <mat-label>enter your company name</mat-label>
+            <input matInput />
+        </mat-form-field>
+        <!-- reduce margin top -->
+        <mat-form-field class="form-inputs" appearance="outline">
+            <mat-label>company phone number</mat-label>
+            <input matInput />
+        </mat-form-field>
+
+        <mat-form-field class="form-inputs" appearance="outline">
+            <mat-label>company website</mat-label>
+            <input matInput />
+        </mat-form-field>
+        <mat-form-field class="form-inputs" appearance="outline">
+            <mat-label>email</mat-label>
+            <input matInput />
+        </mat-form-field>
+        <mat-form-field class="form-inputs" appearance="outline">
+            <mat-label>password</mat-label>
+            <input matInput />
+        </mat-form-field>
+        <div>
+            <button class="primary-button">create account</button>&nbsp;&nbsp;&nbsp;
+            <mat-label>or signup with image</mat-label>
+        </div>
+
+        <mat-label>
+            <a [routerLink]="['/company-login']" >Login instead</a>
+        </mat-label>
+    </div>
+    <div class="w-100"><br/></div> 
+    <!-- </div> -->
+
+    <div class=" p-2 panelGradient">
+        <img src="assets/img/info-advert.png" class="panelGradient-img" />
+    </div>
+
+</div>

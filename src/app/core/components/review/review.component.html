@@ -1,0 +1,97 @@
+<section class="container-fluid  grey-bg ">
+    <form>
+        <div class="d-flex flex-row align-content-start flex-wrap mt-4">
+            <div class="col ">
+                <!-- <div class="mr-auto p-2 "> -->
+                <div class="d-flex flex-column  flex-wrap mt-4 ">
+                    <div class="block-title">leave a review</div>
+                    <div class="block-title">Overall Rating* <br />
+                        <!-- <mat-form-field> -->
+                            <button mat-icon-button color="black" *ngFor="let r of ratingArr; index as i"
+                                (click)="onClick(i)">
+                                <mat-icon>{{returnStar(i)}}
+                                </mat-icon>
+                            </button>
+                        <!-- </mat-form-field> -->
+                    </div>
+
+                    <div class="subtitle md-form">
+                        <mat-label> Pros*</mat-label><br/>
+                        <mat-form-field>                           
+                            <textarea type="text" id="form7" class="md-textarea form-control" matInput rows="10"
+                                cols="60"
+                                placeholder="share some of your best reasons to partner with vessi"></textarea>                                                       
+                        </mat-form-field><br/>
+                        <mat-label class="small-label" >5 words minimum</mat-label>
+                    </div>
+                    <br />
+
+                    <div class="subtitle md-form">
+                        <mat-label>Cons*<br/></mat-label>
+                        <mat-form-field>
+                            <textarea type="text" id="form8" class="md-textarea form-control" matInput rows="10"
+                                cols="60" placeholder="share some of the downsides to partner with vessi"></textarea>                                                    
+                        </mat-form-field><br/>
+                        <mat-label class="small-label">5 words minimum</mat-label>
+                    </div>
+
+                    <div class="subtitle mt-4 "><br />
+                        Would you reccomend this company to another creator?
+                    </div>
+                    <div class="block-title">
+                        selection bar
+                    </div>
+
+                    <div class="subtitle mt-2 ">
+                        How would you rate your experience with the people that<br />you worked with?
+                        <app-slider></app-slider>
+                    </div>
+                    <!-- <div class="block-title">
+                        rating bar
+                    </div> -->
+                </div>
+                <!-- </div> -->
+            </div>
+            <div class="col">
+                <!-- <div class="ml-auto p-2 "> -->
+                <div class="div-box2">
+                    <div class="block-title"><strong>keeping it real.</strong>
+                    </div>
+                    <div class="subtitle mt-2">
+                        Thank you for contributing to the creator community.<br />Your opinion will help other
+                        creators
+                        make
+                        decisions about future sponsorships.
+                    </div>
+                    <div class="subtitle mt-4 ">
+                        Please make sure to follow Community<br />Guidlines and do not post
+                    </div>
+                    <div class="subtitle mt-4">
+                        <ul>
+                            <li>Aggressive or discriminatory language</li>
+                            <li>Profanities</li>
+                            <li>Trade secrets/confidential information</li>
+                        </ul>
+                    </div>
+                    <div class="subtitle mt-4"><br />
+                        Thank you for doing your part to keep Totazi the most trusted place to for creators to grow.
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+        </div>
+
+        <!-- <div class="flex-row flex-wrap mt-4">  class="subtitle mt-4-->
+        <div class="subtitle mt-4" style="margin-right: 30px;">
+            <!-- <mat-checkbox class="example-margin">Check me!</mat-checkbox>  -->
+            <!-- <mat-form-field [style.width.%]="90" appearance="outline"> -->
+                <input type="checkbox" />
+                I agree to the Totazi Terms of Use. This review of my experience at my current or former sponsor is
+                truthful.
+                <div><button type="submit" class="review-button" (click)="submitReview()">submit review</button>
+                </div>
+            <!-- </mat-form-field>  -->
+            <!-- </div> -->
+        </div>
+    </form>
+</section>

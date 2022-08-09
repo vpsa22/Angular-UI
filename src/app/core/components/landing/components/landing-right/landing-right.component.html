@@ -1,0 +1,115 @@
+ <div>
+  <form>
+<nav> 
+    <img src="assets/img/panelGradient.svg"  />
+    <ul>
+      <div class="col-12">
+        <li>
+          <div class="row ">
+            <div class="panel-title">
+              Search for a company
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="row">
+            <div class="panel-subtitle">
+              Search millions of companies.
+              <br />
+              Go get the bag that you deserve
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class=" p-2 ">
+            <mat-form-field appearance="outline">                              
+                <i class="material-icons">search</i>
+              <input type="text" class="search-box"  placeholder="Company name or keyword"  (click)="routeToDetails()" />                              
+            </mat-form-field>
+        </div>
+          <!-- <div class="row">
+            <div class="body-copy-lg ">
+              <img class="searchIcon" src="assets/icons/search.svg" />
+              <input class="search-box" type="text" placeholder="Search" (click)="routeToDetails()" />
+            </div>
+          </div> -->
+        </li>
+      </div>
+    </ul>
+  </nav>
+  </form>
+<!-- </div> -->
+
+
+<!-- <nav>
+    <img src="assets/img/panelGradient.svg" class="panelGradient" />
+    <ul>
+      <li>
+      <h1 class="panel-title">Search for a company</h1>
+      <h1 class="panel-subtitle">
+        Search millions of companies.
+        <br />
+        Go get the bag that you deserve
+      </h1>
+        <img class="searchIcon" src="assets/icons/search.svg" />
+        <input class="search-box"type="text" placeholder="Search" (click)="routeToDetails()"/>      
+        </li>
+    </ul>
+  </nav> -->
+
+<!-- <div class="panel-box col-10">
+      <h1 class="row">
+        <div class="form-title">Search for a company</div>
+        <hr />
+      </h1>
+
+      <div class="row">
+        <div class="form-body-text">
+          Search millions of companies. Go get the bag that you deserve.
+        </div>
+      </div>
+      <div><br /><br /></div> -->
+
+<!-- <div class="row">
+        <div class="d-flex me-2">
+          <mat-form-field>
+            <mat-label>Search</mat-label>
+            <input
+              type="text"
+              (keyup)="applyFilter($event)"
+              placeholder="Search"
+            /> -->
+<!-- not working matInput -->
+<!-- </mat-form-field>
+        </div> -->
+
+<!-- <div>
+          <table mat-table>
+            <ng-container matColumnDef="name">
+              <td mat-cell *matCellDef="let row">{{ row.name }}</td>
+            </ng-container>
+            <tr
+              mat-header-row
+              *matHeaderRowDef="displayedColumn; sticky: true"
+            ></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumn"></tr>
+          </table>
+        </div> -->
+
+<!-- <mat-form-field >
+                    <mat-select [formControl]="bankCtrl" placeholder="" #singleSelect>
+                      <mat-option>
+                        <ngx-mat-select-search [formControl]="bankFilterCtrl"></ngx-mat-select-search>
+                      </mat-option>
+                
+                      <mat-option *ngFor="let bank of filteredBanks | async" [value]="bank">
+                        {{bank.name}}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>               
+                <p>
+                  Selected Bank: {{bankCtrl.value?.name}}
+                </p> -->
+<!-- </div>
+    </div>
+  </div> -->

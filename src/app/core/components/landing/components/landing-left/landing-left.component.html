@@ -1,0 +1,38 @@
+<div class="row">
+    <form [formGroup]="landingLeftForm" (ngSubmit)="onSignUp()">
+        <div class="d-flex flex-row align-content-start flex-wrap mt-4">
+            <div class="mr-auto p-2 ">            
+                    <div class="block-title">
+                        Get paid fairly, search for a company below
+                    </div>            
+                <hr />
+                <div class="row">
+                    <div class="body-copy-lg ">
+                        Don’t just say yes to any offer. Transform your career as <br/>a creator. Begin your journey by
+                        finding a company.<br/><br/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mt-1 pt-3 active">
+                        <a [routerLink]="['/signup']" class="sign-up" >Sign Up</a>
+                        <a [routerLink]="['/login']" class="sign-up">Login</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mt-1 pt-3">
+                        <button type="submit" class="primary-button">For Companies</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- <div class="mr-auto p-2 ">
+                <div >
+                    <app-landing-right></app-landing-right>
+                </div>
+            </div> -->
+
+        </div>
+    </form>
+
+</div>
