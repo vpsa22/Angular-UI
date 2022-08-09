@@ -1,0 +1,208 @@
+
+
+@use '@angular/material' as mat;
+@include mat.core();
+$mat-totazicolor: (
+  50: #e8eaf6,
+  100: #c5cae9,
+  200: #9fa8da,
+  300: #7986cb,
+  400: #5c6bc0,
+  500: #3f51b5,
+  600: #3949ab,
+  700: #303f9f,
+  800: #283593,
+  900: #1a237e,
+  A100: #8c9eff,
+  A200: #536dfe,
+  A400: #3d5afe,
+  A700: #304ffe,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #ffffff,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #ffffff,
+    A400: #ffffff,
+    A700: #ffffff,
+  ),
+);
+
+$totazi-primary: mat.define-palette($mat-totazicolor);
+$totazi-accent: mat.define-palette($mat-totazicolor, A200, A100, A400);
+$totazi-warn: mat.define-palette(mat.$red-palette);
+
+$totazi-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $totazi-primary,
+      accent: $totazi-accent,
+      warn: $totazi-warn,
+    ),
+  )
+);
+@include mat.all-component-themes($totazi-theme);
+
+@media (max-width: 1339px) {
+  .container-fluid {  
+    padding: 0 35px !important;
+    margin: 0px !important;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container-fluid {
+    max-width: 1440px;
+    padding: 0 35px !important;
+  }
+}
+.grey-bg {
+  background-color: #E5E5E5;
+  overflow-x: hidden;
+}
+
+.totazi-logo {
+  height: 30px;
+  width: 157px;
+}
+
+.image {
+  position: absolute;
+  right: 0 px;
+  height: 480px;
+  background-size: cover;
+}
+
+.form-control:focus {
+  border-color: #1a237e;
+  box-shadow: 0 0 0 0.25rem rgba(177, 140, 193, 0.25) !important;
+}
+.form-label {
+  font-family: "Poppins-Bold";
+  font-size: 14px;
+  color: #000000;
+}
+
+.form-data {
+  font-family: "Poppins-Regular";
+  font-size: 14px;
+  color: #000000;
+}
+.form-control {
+  height: 45px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0px;
+  font-family: "Poppins-Regular";
+}
+.block-title {
+  font-family: Syne-Regular;
+  font-size: 45px;
+  margin-right: 0px;
+  margin-bottom: 5%;
+  line-height: 55px;
+  display: inline;
+  color: red($color: #000000);
+}
+
+//form fields
+.primary-button {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Poppins-Light";
+  font-weight: 100;
+  font-size: 16px;
+  height: 45px;
+  border-radius: 2rem;
+  padding: 8px 32px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-color: #000000;
+  border-style: solid;
+  // line-height: 1.2;
+}
+.disabled-button {
+  color: #000000;
+  background-color: #ffffff;
+  font-family: "Poppins-Light";
+  font-weight: 100;
+  font-size: 16px;
+  height: 45px;
+  border-radius: 2rem;
+  margin-left: 30px;  
+  padding: 8px 32px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-color: #000000;
+  border-style: solid;
+    
+  // line-height: 1.2;
+}
+.form-title {
+  font-family: Poppins-Regular;
+  font-size: 22px;
+  margin-right: 0px;
+  line-height: 50px;
+  display: inline;
+  color: red($color: #000000);
+}
+.form-body-text {
+  font-family: Poppins-Regular;
+  font-size: 16px;
+  margin-right: 0px;
+}
+// $grid-breakpoints: (
+//   xs: 0,
+//   sm: 480px,
+//   md: 768px,
+//   lg: 1024px
+// );
+
+// $container-max-widths: (
+//   sm: 420px,
+//   md: 720px,
+//   lg: 960px
+// );
+
+
+ 
+mat-form-field.mat-form-field {
+  width: 400px;
+  // margin-left: 5%;
+  font-size: 18px;
+  font-family: "Syne-Bold";
+  
+  // color: red ;
+}
+mat-label{
+  font-size: 20px;  
+  font-family: "Syne-Bold";
+}
+
+mat-card {
+  width: calc(100% - 70px);
+  height: calc(100% - 70px);
+}
+
+.error_text{
+  color: red !important;
+  font-family: Poppins-Regular;
+  font-size: 16px;
+}
+
+a:hover{
+  cursor: pointer;
+}
